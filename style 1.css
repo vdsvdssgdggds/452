@@ -1,0 +1,356 @@
+/* Name: Shao Jiale Solon ID: 223190715*/
+        .home{
+            background-image: url(home\ 1.png);
+            background-repeat:no-repeat;
+            background-size: cover; 
+        }
+
+        .about-us{
+            background-image: url(about\ us\ 1.png);
+            background-repeat:no-repeat;
+            background-size: cover; 
+        }
+
+        .blog{
+            background-image: url(blog\ 1.png);
+            background-repeat:no-repeat;
+            background-size: cover; 
+        }
+
+        .product{
+            background-image: url(product\ 1.png);
+            background-repeat:no-repeat;
+            background-size: cover; 
+        }
+
+        .support{
+            background-image: url(support\ 1.png);
+            background-repeat:no-repeat;
+            background-size: cover; 
+        }
+
+
+        header{
+            background-color: rgba(255, 16, 4, 0.5);                                         
+            border: 5px solid rgb(6, 47, 250);            
+        }
+
+        .logo img{
+            float: left;
+            width: 105px;
+            height: 110px;
+        }
+
+        .logo p{
+            float: left;
+            color: rgba(4, 173, 245, 0.99);
+            margin-left: 20px; /* Added margin for separation */
+        }
+
+        h1{
+            
+            color: rgba(9, 183, 236, 0.9);
+            text-shadow:10px 10px 10px  rgb(255, 0, 251);
+            text-align: center;
+        }
+
+        .navigation a{       
+            color: rgba(0, 255, 55, 0.9);
+            margin: 50px;
+            text-decoration: none;       
+        }
+        .navigation a:hover{
+            color: burlywood;
+        }
+
+        .navigation a.active{
+            background-color: rgb(0, 0, 0);
+        }
+
+        .text{
+            margin: 5px;          
+            font-size: 50px;
+            color: rgb(154, 146, 3);
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;           
+        }
+
+        button{
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+            font-size: medium;
+            border: none;
+            background-color: rgba(242, 148, 93, 0.6);
+            animation-name: changeColor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;  /* Animation repeats indefinitely */
+            outline: inherit;
+        }
+
+        @keyframes changeColor {
+            0% { background-color: rgba(255, 0, 0, 0.6); }   
+            25% { background-color: rgba(0, 255, 0, 0.6); }  
+            50% { background-color: rgba(0, 0, 255, 0.6); }  
+            75% { background-color: rgba(255, 255, 0, 0.6); }
+            100% { background-color: rgba(255, 0, 0, 0.6); }
+        }   /*Setting the button transition color*/
+
+        #description {  
+            max-height: 5px;  
+            overflow: hidden;  
+            transition: max-height 3s ease-in-out;  
+            background-color: rgb(242, 174, 174); 
+            margin: 0 auto;  
+            padding: 0px;
+            border: 0px solid #ddd;  
+            width: 700px;             
+            margin-top: 10px;
+            opacity: 0.8;
+            border-radius: 20px;  /*Adding Screen Effects*/
+        } 
+
+        #description.visible {
+            max-height: 400px;
+        }
+
+        .hidden {
+            display: block;           
+        }
+
+        footer{
+            background-color: rgb(146, 178, 230,0.5);                     
+            border: 5px solid white;            
+            bottom: 0;
+            left: 0;
+            right: 0;
+            
+        }
+
+        footer p{            
+            text-align: center;
+        }
+
+        .border{ 
+            border: 2px solid black;          
+            margin-top: 0px;
+            height: auto;
+            text-align: center;
+        }
+
+        .con{
+            border: 0px solid black;          
+            margin-top: 0px;
+            height: 500px;
+            text-align: center;
+        }
+        
+
+        .row{
+            width: 100%;
+            justify-content: space-evenly;
+            display: flex;
+        }
+
+        .leftcolumn{          
+            width: 50%;
+            float: left;
+        }
+
+        .card1{
+            background-color: rgb(255, 255, 255,0.8);           
+            border: 0px solid black;
+            border-radius: 15px;
+            margin-top: 40px;
+            margin-left: 10px;         
+            height: 400px;
+            width: 600px;
+            text-align: center;       
+        }
+
+        .card1 p{
+            column-count:4;
+	        column-gap:10px;           
+        }
+
+        .rightcolumn{
+            width: 40%;
+            float: right;
+        }
+
+        .card2{
+            background-color: rgb(255, 255, 255,0.8);           
+            border: 0px solid black;
+            border-radius: 15px;
+            margin-top: 20px;        
+            height: 200px;
+            width: 500px;            
+        }
+
+        .card2 p{
+            column-count:3;
+	        column-gap:30px;           
+        }
+
+        .card3{
+            background-color: rgb(255, 255, 255,0.8);           
+            border: 0px solid black;
+            border-radius: 15px;
+            margin-top: 40px;
+            margin-bottom: 20px;         
+            height: 200px;
+            width: 500px;           
+        }
+
+        .card3 p{
+            column-count:3;
+	        column-gap:30px;           
+        }
+
+        h2{
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            gap: 30px; 
+            width: 100%;
+        }
+        
+        .card4, .card5, .card6, .card7 {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 0px solid black;
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 450px;
+            width: 300px;           
+        }
+
+        .img4, .img5, .img6, .img7{
+            width: 150px;
+            height: 100px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px dotted black;
+            
+        }
+        
+        th, td {
+            border: 1px dotted rgb(251, 0, 255) ;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .column-left, .column-right {
+            float: left;
+          }
+        
+          .column-left{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column; /* vertical centering */
+            margin-bottom: 20px;
+          }
+        
+          .column-right{
+            width: 70%;
+            margin-bottom: 20px;
+          }
+        
+          .right-top {  
+            display: flex;
+            justify-content: space-between;
+            /* Align card9, card10 and card11 in the upper right column. */
+          }
+        
+          .right-bottom {
+            /* For placing the card12 underneath */
+            margin-top: 20px;
+             
+          }
+
+          .card8{
+            background-color: aquamarine;
+            margin-left: 10px;
+            width: 250px;
+            height: 500px;
+            border-radius: 40px;
+          }
+        
+          .card9, .card10, .card11  {
+            background-color: bisque;
+            width: 200px;
+            height: 200px;
+            margin: 10px; /* Make sure the cards are spaced apart */
+          }
+        
+          .card12 {
+            background-color: antiquewhite;
+            width: 90%;
+            height: 200px;
+            margin-left: 40px;
+          }
+
+          .card9 img{
+            width: 200px;
+            height: 200px;
+            transition: transform 0.5s ease;  /* Adding conversion effects */
+          }
+
+          .card10 img{
+            width: 200px;
+            height: 200px;
+            transition: transform 0.5s ease;  
+          }
+
+          .card11 img{
+            width: 200px;
+            height: 200px;
+            transition: transform 0.5s ease;  
+          }
+
+          .card12 img{
+            width: 100%;
+            height: 200px;
+            transition: transform 0.5s ease;  
+          }
+
+          .card img:hover {
+            transform: scale(1.1); /* Enlarge image */
+        }
+
+        h6{
+            font-size: x-large;
+        }
+        card11 {
+            background-color: bisque;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            overflow: hidden; /* 防止图片放大时溢出 */
+            display: flex;    /* 使用 Flexbox 布局来居中内部内容（如果需要） */
+            justify-content: center; /* 水平居中内部内容 */
+            align-items: center;     /* 垂直居中内部内容 */
+        }
+         
+        /* 图片放大效果 */
+        .card11 img {
+            width: 100%;
+            height: 100%; /* 或者设置为 auto 以保持比例，但可能需要额外的居中调整 */
+            object-fit: cover; /* 确保图片填满容器并保持比例 */
+            transition: transform 0.5s ease; /* 平滑的过渡效果 */
+        }
+
+

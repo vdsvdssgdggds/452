@@ -134,6 +134,7 @@ footer {
     background-color: rgb(146, 178, 230,0.5);
     border: 5px solid white;
     bottom: 0;
+    position: fixed;   
     left: 0;
     right: 0;
 }
@@ -338,4 +339,35 @@ img {
 
 h6 {
     font-size: x-large;
+}
+body {  
+    font: 75% georgia, sans-serif;  
+    line-height: 1.88889;  
+    color: #e80335e8;  
+    background: #f2e7f0 url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom left; /* 或 center */  
+    background-size: cover; /* 可选，根据需要调整 */  
+    margin: 0;  
+    padding: 0;  
+    /* ... 其他样式 ... */
+ 
+
+}
+.card12 {
+    background-color: antiquewhite;
+    width: 50%; /* 调整宽度以适应您的布局 */
+    margin: 0 auto; /* 水平居中 */
+    height: 20px;
+    display: flex; /* 如果需要垂直居中内容（虽然这里可能不需要） */
+    align-items: center; /* 垂直居中内容（如果需要） */
+    justify-content: center; /* 水平居中内容（如果需要，但通常对img不起作用，因为它是行内块级元素且宽度为100%） */
+}
+ 
+.card12 img {
+    width: 60%;
+    height: auto; /* 让高度自动调整以保持比例 */
+    transition: transform 0.5s ease;
+}
+ 
+.card12 img:hover {
+    transform: scale(1.1);
 }
